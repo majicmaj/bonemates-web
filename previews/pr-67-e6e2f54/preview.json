@@ -1,0 +1,46 @@
+{
+  "source_sha": "e6e2f546717ca90f1828e98b3de7b32798fe7117",
+  "pull_request": "https://github.com/majicmaj/bonemates/pull/67",
+  "built_at": "2026-10-27T22:48:40.251811+00:00",
+  "engine_version": "4.6.3.stable.official.7d41c59c4",
+  "preview_save_name": "BonematesVerification-bbcd8aaec76945ada9c5c47772d210b2",
+  "expected_web_save_namespace": "/userfs/godot/app_userdata/BonematesVerification-bbcd8aaec76945ada9c5c47772d210b2",
+  "browser_storage_note": "Separate save namespace within the shared /userfs IndexedDB mount; not a separate origin/database. Never clear the whole database.",
+  "implemented_027": "Original illustrated arms/baskets, shortened source-stitched stem and owned both-side scoring teeth; reviewed source and staged native evidence. Latest full/115 and live browser smoke pending parent verification.",
+  "entry": "Unmodified PR production main scene; no staged capture fixture.",
+  "asset_tag": "e6e2f54",
+  "files": {
+    "index.e6e2f54.audio.position.worklet.js": {
+      "sha256": "be33985bc7160d6bf9646f259cd86b259cd67b02ccb297ee5c44f8ac84327bc8",
+      "bytes": 2973
+    },
+    "index.e6e2f54.audio.worklet.js": {
+      "sha256": "5b476a9c9ce642c0ee4256436d1bc31d9c38f868aca0f9a8e2a57c18d2dec2a3",
+      "bytes": 7298
+    },
+    "index.e6e2f54.js": {
+      "sha256": "e3f56ee40e6f84371053db06692cfac15e2c8659547b11c6b2dfa1996dabd981",
+      "bytes": 315759
+    },
+    "index.e6e2f54.pck": {
+      "sha256": "53a6605fc0f158b1ce989761dd9a388e6de0e0bd37739c7eba922527ae7fb692",
+      "bytes": 20699204
+    },
+    "index.e6e2f54.wasm": {
+      "sha256": "26b61ce95247012ab3dca3ff51e96d1cdbff44ee91a8c20a83e150afca83f1b6",
+      "bytes": 37700666
+    },
+    "index.html": {
+      "sha256": "bd4f569028dd49f9ba01ad42e2fc9f83686db003fe03406f2a9d3963e1712902",
+      "bytes": 34964
+    },
+    "index.png": {
+      "sha256": "57555f04d9ee33ad3f60d90f5fbe4719af9755946d21a162f5731d5b8957e77d",
+      "bytes": 6327
+    },
+    "version.txt": {
+      "sha256": "8319d1e40127eee649b512ae198910053dbfbaf88de7f2b0088053a1a72b669d",
+      "bytes": 41
+    }
+  }
+}
