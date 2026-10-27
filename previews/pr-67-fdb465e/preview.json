@@ -1,0 +1,46 @@
+{
+  "source_sha": "fdb465ecbbb0b58a02cd344cb32d13a3522cc55f",
+  "pull_request": "https://github.com/majicmaj/bonemates/pull/67",
+  "built_at": "2026-10-27T19:09:07.687905+00:00",
+  "engine_version": "4.6.3.stable.official.7d41c59c4",
+  "preview_save_name": "BonematesVerification-e8cbf704e0d846009df899dac9477000",
+  "expected_web_save_namespace": "/userfs/godot/app_userdata/BonematesVerification-e8cbf704e0d846009df899dac9477000",
+  "browser_storage_note": "Separate save namespace within the shared /userfs IndexedDB mount; not a separate origin/database. Never clear the whole database.",
+  "pending_027": "Original scale art restoration and animated scoring teeth are not included.",
+  "entry": "Unmodified PR production main scene; no staged capture fixture.",
+  "asset_tag": "fdb465e",
+  "files": {
+    "index.fdb465e.audio.position.worklet.js": {
+      "sha256": "be33985bc7160d6bf9646f259cd86b259cd67b02ccb297ee5c44f8ac84327bc8",
+      "bytes": 2973
+    },
+    "index.fdb465e.audio.worklet.js": {
+      "sha256": "5b476a9c9ce642c0ee4256436d1bc31d9c38f868aca0f9a8e2a57c18d2dec2a3",
+      "bytes": 7298
+    },
+    "index.fdb465e.js": {
+      "sha256": "e3f56ee40e6f84371053db06692cfac15e2c8659547b11c6b2dfa1996dabd981",
+      "bytes": 315759
+    },
+    "index.fdb465e.pck": {
+      "sha256": "233ee539e61b0af04d746a305887dbab223683535379e45a35f3ce887905452f",
+      "bytes": 20634924
+    },
+    "index.fdb465e.wasm": {
+      "sha256": "26b61ce95247012ab3dca3ff51e96d1cdbff44ee91a8c20a83e150afca83f1b6",
+      "bytes": 37700666
+    },
+    "index.html": {
+      "sha256": "b7c0a519b9b6b3b03d27ac8f4c4cc978cef534558c49b64ab6173ced3aa4151c",
+      "bytes": 34964
+    },
+    "index.png": {
+      "sha256": "57555f04d9ee33ad3f60d90f5fbe4719af9755946d21a162f5731d5b8957e77d",
+      "bytes": 6327
+    },
+    "version.txt": {
+      "sha256": "7c3d44c755390d7bf61abe0242c2617f4887c8f5965996d92741d661c1c78d90",
+      "bytes": 41
+    }
+  }
+}
