@@ -1,46 +1,43 @@
 {
-  "source_sha": "e6e2f546717ca90f1828e98b3de7b32798fe7117",
-  "merge_commit": "c1f50999bf38b61f8a2c20147199bd12b93967ea",
-  "source_tree": "89fb4409adb7b2aeae1dfb9cac83faf2d0649ec6",
-  "pull_request": "https://github.com/majicmaj/bonemates/pull/67",
-  "built_at": "2026-10-27T23:12:49.573634+00:00",
-  "engine_version": "4.6.3.stable.official.7d41c59c4",
+  "source_sha": "ea06d978747396f8c46b9894e800f81ba23da615",
+  "merge_commit": "1129e8d6c08db39fe152a2e292b3bd689557e822",
+  "source_tree": "cc088c82ae8db1d065a1a04102b0df699990df45",
+  "pull_request": "https://github.com/majicmaj/bonemates/pull/68",
+  "built_at": "2026-10-28T23:52:46.256938+00:00",
   "production_save_name": "Candles & Company",
-  "expected_web_save_namespace": "/userfs/godot/app_userdata/Candles & Company",
   "packaged_config_sha256": "2c10d5ba07a0e9b0004cd47eb905d8bc21a8c12040ffe454a335349398242256",
-  "entry": "Production main scene, exact original project configuration and existing production save namespace.",
-  "asset_tag": "c1f5099",
+  "asset_tag": "1129e8d",
   "files": {
-    "index.c1f5099.audio.position.worklet.js": {
-      "sha256": "be33985bc7160d6bf9646f259cd86b259cd67b02ccb297ee5c44f8ac84327bc8",
-      "bytes": 2973
-    },
-    "index.c1f5099.audio.worklet.js": {
-      "sha256": "5b476a9c9ce642c0ee4256436d1bc31d9c38f868aca0f9a8e2a57c18d2dec2a3",
-      "bytes": 7298
-    },
-    "index.c1f5099.js": {
-      "sha256": "e3f56ee40e6f84371053db06692cfac15e2c8659547b11c6b2dfa1996dabd981",
-      "bytes": 315759
-    },
-    "index.c1f5099.pck": {
-      "sha256": "b0d3facccafcb1eff3a4fa80cfbc1533e7ea05962b0959227bacbffceef37c59",
-      "bytes": 20699188
-    },
-    "index.c1f5099.wasm": {
-      "sha256": "26b61ce95247012ab3dca3ff51e96d1cdbff44ee91a8c20a83e150afca83f1b6",
-      "bytes": 37700666
-    },
     "index.html": {
-      "sha256": "7d1c6282b1981d32d688ffff59d80e3adb5a83642db3916947db35df4e7375de",
+      "sha256": "c5691cfb5c16062e7c5b9b18e13db31c5979af034511cc58923ed58877aa306f",
       "bytes": 37304
     },
     "index.png": {
       "sha256": "57555f04d9ee33ad3f60d90f5fbe4719af9755946d21a162f5731d5b8957e77d",
       "bytes": 6327
     },
+    "index.1129e8d.audio.worklet.js": {
+      "sha256": "5b476a9c9ce642c0ee4256436d1bc31d9c38f868aca0f9a8e2a57c18d2dec2a3",
+      "bytes": 7298
+    },
+    "index.1129e8d.wasm": {
+      "sha256": "26b61ce95247012ab3dca3ff51e96d1cdbff44ee91a8c20a83e150afca83f1b6",
+      "bytes": 37700666
+    },
+    "index.1129e8d.js": {
+      "sha256": "e3f56ee40e6f84371053db06692cfac15e2c8659547b11c6b2dfa1996dabd981",
+      "bytes": 315759
+    },
+    "index.1129e8d.pck": {
+      "sha256": "35bb94fb240a5b5acd1c06a47654285f0b30b307115c22ee04c5c1d319020268",
+      "bytes": 20711860
+    },
+    "index.1129e8d.audio.position.worklet.js": {
+      "sha256": "be33985bc7160d6bf9646f259cd86b259cd67b02ccb297ee5c44f8ac84327bc8",
+      "bytes": 2973
+    },
     "version.txt": {
-      "sha256": "1388c6850715b4816bb0e64c7716b57abfe8130e727db6ae16b7f37397e51380",
+      "sha256": "2f3a5f13e27de4d06dca0928c44ebb7cfe2e1260289edfa9b0e16ec05e8addd3",
       "bytes": 7
     }
   }
