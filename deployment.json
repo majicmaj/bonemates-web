@@ -1,44 +1,44 @@
 {
-  "source_sha": "ea06d978747396f8c46b9894e800f81ba23da615",
-  "merge_commit": "1129e8d6c08db39fe152a2e292b3bd689557e822",
-  "source_tree": "cc088c82ae8db1d065a1a04102b0df699990df45",
-  "pull_request": "https://github.com/majicmaj/bonemates/pull/68",
-  "built_at": "2026-10-28T23:52:46.256938+00:00",
+  "source_sha": "59ff17dabc139be0794b7f0821080066fbb2f4e4",
+  "merge_commit": "26888e1056cb91e79d5db0b6d720263cc3519263",
+  "source_tree": "2f142faeb441569764b20d44ca9b05d2f3abe6b4",
+  "pull_request": "https://github.com/majicmaj/bonemates/pull/69",
+  "built_at": "2026-10-29T12:29:44.485297+00:00",
   "production_save_name": "Candles & Company",
   "packaged_config_sha256": "2c10d5ba07a0e9b0004cd47eb905d8bc21a8c12040ffe454a335349398242256",
-  "asset_tag": "1129e8d",
+  "asset_tag": "26888e1",
   "files": {
     "index.html": {
-      "sha256": "c5691cfb5c16062e7c5b9b18e13db31c5979af034511cc58923ed58877aa306f",
+      "sha256": "2427d875abe2af5f0ebddd250e592800f81eae6d7b01f61e8c63cee44f08a1a0",
       "bytes": 37304
     },
     "index.png": {
       "sha256": "57555f04d9ee33ad3f60d90f5fbe4719af9755946d21a162f5731d5b8957e77d",
       "bytes": 6327
     },
-    "index.1129e8d.audio.worklet.js": {
-      "sha256": "5b476a9c9ce642c0ee4256436d1bc31d9c38f868aca0f9a8e2a57c18d2dec2a3",
-      "bytes": 7298
-    },
-    "index.1129e8d.wasm": {
-      "sha256": "26b61ce95247012ab3dca3ff51e96d1cdbff44ee91a8c20a83e150afca83f1b6",
-      "bytes": 37700666
-    },
-    "index.1129e8d.js": {
-      "sha256": "e3f56ee40e6f84371053db06692cfac15e2c8659547b11c6b2dfa1996dabd981",
-      "bytes": 315759
-    },
-    "index.1129e8d.pck": {
-      "sha256": "35bb94fb240a5b5acd1c06a47654285f0b30b307115c22ee04c5c1d319020268",
-      "bytes": 20711860
-    },
-    "index.1129e8d.audio.position.worklet.js": {
+    "index.26888e1.audio.position.worklet.js": {
       "sha256": "be33985bc7160d6bf9646f259cd86b259cd67b02ccb297ee5c44f8ac84327bc8",
       "bytes": 2973
     },
+    "index.26888e1.pck": {
+      "sha256": "aa624c73fec958c77b64574cb0160dda43ed27508360db1d8410993ada8082e8",
+      "bytes": 20721460
+    },
+    "index.26888e1.wasm": {
+      "sha256": "26b61ce95247012ab3dca3ff51e96d1cdbff44ee91a8c20a83e150afca83f1b6",
+      "bytes": 37700666
+    },
     "version.txt": {
-      "sha256": "2f3a5f13e27de4d06dca0928c44ebb7cfe2e1260289edfa9b0e16ec05e8addd3",
+      "sha256": "bb264cee1f6072205fa5f3ce64fabbf65afa4fb89816a7a6bdceef3977c7c3b3",
       "bytes": 7
+    },
+    "index.26888e1.audio.worklet.js": {
+      "sha256": "5b476a9c9ce642c0ee4256436d1bc31d9c38f868aca0f9a8e2a57c18d2dec2a3",
+      "bytes": 7298
+    },
+    "index.26888e1.js": {
+      "sha256": "e3f56ee40e6f84371053db06692cfac15e2c8659547b11c6b2dfa1996dabd981",
+      "bytes": 315759
     }
   }
 }
