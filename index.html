@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bonemates | Free Roguelike Deckbuilder</title>
+<meta name="description" content="Play Bonemates, a free pixel art roguelike deckbuilder in your browser. Build your deck, battle across five lanes, and face the Host. No download needed.">
+<meta name="theme-color" content="#0b0807">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Bonemates | Free Roguelike Deckbuilder">
+<meta property="og:description" content="Build your deck, battle across five lanes, and face the Host. A free pixel art roguelike card game. Play in your browser, no download needed.">
+<link rel="canonical" href="https://bonemates.hobbyhood.app/">
+<meta property="og:url" content="https://bonemates.hobbyhood.app/">
+<meta property="og:image" content="https://bonemates.hobbyhood.app/social-preview.webp">
+<meta property="og:image:alt" content="Pixel art card battle in Bonemates, with five lanes and a balance scale.">
+<link rel="icon" href="assets/img/favicon.png">
+<link rel="preload" href="assets/fonts/NewRocker-Regular.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<svg class="defs" aria-hidden="true" focusable="false">
+  <symbol id="star4" viewBox="0 0 24 24">
+    <path d="M12 0c.6 6.7 5.3 11.4 12 12-6.7.6-11.4 5.3-12 12-.6-6.7-5.3-11.4-12-12C6.7 11.4 11.4 6.7 12 0Z"/>
+  </symbol>
+</svg>
+
+<header class="site-head">
+  <div class="head-inner">
+    <a class="brand" href="#top" aria-label="Bonemates, back to top">
+      <img class="brand-mark" src="assets/img/candles.png" alt="" width="34" height="38">
+      <span class="brand-name">Bonemates</span>
+    </a>
+    <nav class="site-nav" aria-label="Sections">
+      <a href="#wager">Combat</a>
+      <a href="#turn">How to play</a>
+      <a href="#bonemates">Cards</a>
+      <a href="#climb">Your run</a>
+    </nav>
+    <a class="btn btn--small" href="/play/">Play free</a>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero" id="top">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <h1>A candlelit<br><em>deckbuilder.</em></h1>
+        <p class="lede">Build your deck, battle across five lanes, and face the Host in this free pixel art roguelike card game.</p>
+        <div class="actions">
+          <a class="btn" href="/play/">Play free <span class="arrow" aria-hidden="true">→</span></a>
+          <a class="btn btn--ghost" href="#turn">How to play</a>
+        </div>
+        <ul class="hero-meta">
+          <li>Free</li>
+          <li>No install</li>
+          <li>Plays in your browser</li>
+        </ul>
+      </div>
+
+      <figure class="hero-art">
+        <div class="shot-frame">
+          <img src="assets/shots/battle.webp" width="1280" height="800" fetchpriority="high" alt="Bonemates pixel art card battle with five lanes, a balance scale, and four cards in hand.">
+        </div>
+        <img class="card-peek" src="assets/img/card-back.webp" width="887" height="1774" alt="">
+      </figure>
+    </div>
+
+    <div class="hero-facts">
+      <ul class="wrap">
+        <li><strong>72</strong><span>cards in the library</span></li>
+        <li><strong>12</strong><span>bonemates</span></li>
+        <li><strong>5</strong><span>lanes</span></li>
+        <li><strong>10</strong><span>point lead to win</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" id="wager" aria-labelledby="wager-title">
+    <div class="wrap wager-grid">
+      <div class="wager-art">
+        <span class="plate-label">The scale</span>
+        <img class="scale-img" src="assets/img/scale.png" width="256" height="256" alt="">
+        <span class="plate-label plate-label--end">Ten points to win</span>
+      </div>
+      <div class="wager-copy">
+        <p class="eyebrow"><svg class="star" aria-hidden="true"><use href="#star4"/></svg>Card combat</p>
+        <h2 id="wager-title">Tip the scale. Win the fight.</h2>
+        <p>Hit an open lane to tip the scale your way. Enemy hits push it back. Reach a ten point lead to win.</p>
+        <p>Extra damage earns golden teeth to help in later fights.</p>
+
+        <dl class="resources">
+          <div class="res">
+            <dt><img src="assets/img/blood.png" width="11" height="11" alt=""><span>Blood</span></dt>
+            <dd>Sacrifice cards on your board to play stronger ones.</dd>
+          </div>
+          <div class="res">
+            <dt><img src="assets/img/bone.png" width="12" height="8" alt=""><span>Bones</span></dt>
+            <dd>Earn one per card death. Save them to play bone-cost cards.</dd>
+          </div>
+          <div class="res">
+            <dt><img src="assets/img/candle-lit.png" width="16" height="16" alt=""><span>Candles</span></dt>
+            <dd>Your lives. Lose a fight, lose a candle. Run out and start again.</dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--stone" id="turn" aria-labelledby="turn-title">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow"><svg class="star" aria-hidden="true"><use href="#star4"/></svg>How to play</p>
+        <h2 id="turn-title">Draw. Play. Attack.</h2>
+        <p class="lede">Choose your cards and lanes. Ring the bell to attack automatically.</p>
+      </div>
+
+      <ol class="beats">
+        <li class="beat">
+          <div class="beat-copy">
+            <div class="beat-kicker"><span class="beat-num">01</span><span class="beat-tag">Start of turn</span></div>
+            <h3>Draw a card.</h3>
+            <p>Start each turn with a card from your deck or the fodder pile. Fodder gives you a free card to sacrifice.</p>
+          </div>
+          <div class="beat-art">
+            <div class="deck-stack" aria-hidden="true">
+              <div class="deck-card deck-card--fodder"><img src="assets/img/card-back.webp" alt=""><span class="stack-label stack-label--fodder">Fodder</span></div>
+              <div class="deck-card deck-card--deck"><img src="assets/img/card-back.webp" alt=""><span class="stack-label">Deck</span></div>
+            </div>
+            <p class="caption">Draw a fighter or fuel your next play.</p>
+          </div>
+        </li>
+
+        <li class="beat beat--flip">
+          <div class="beat-copy">
+            <div class="beat-kicker"><span class="beat-num">02</span><span class="beat-tag">Main phase</span></div>
+            <h3>Play your cards.</h3>
+            <p>Pay with sacrifices or saved bones. Place cards to block enemies or attack open lanes.</p>
+          </div>
+          <div class="beat-art">
+            <div class="card-spread" aria-hidden="true">
+              <div class="card-face" style="--r:-6deg">
+                <div class="face">
+                  <span class="cost"><img src="assets/img/blood.png" alt="">3</span>
+                  <span class="cname">Randy</span>
+                  <img class="cportrait" src="assets/img/randy.png" alt="">
+                  <div class="cstats"><span><img src="assets/img/sword.png" alt="">2</span><span><img src="assets/img/heart.png" alt="">5</span></div>
+                </div>
+              </div>
+              <div class="card-face" style="--r:1deg">
+                <div class="face">
+                  <span class="cost"><img src="assets/img/bone.png" alt="">4</span>
+                  <span class="cname">Kat</span>
+                  <img class="cportrait" src="assets/img/kat.png" alt="">
+                  <div class="cstats"><span><img src="assets/img/sword.png" alt="">1</span><span><img src="assets/img/heart.png" alt="">2</span></div>
+                </div>
+              </div>
+              <div class="card-face" style="--r:7deg">
+                <div class="face">
+                  <span class="cost"><img src="assets/img/blood.png" alt="">1</span>
+                  <span class="cname">Borby</span>
+                  <img class="cportrait" src="assets/img/borby.png" alt="">
+                  <div class="cstats"><span><img src="assets/img/sword.png" alt="">1</span><span><img src="assets/img/heart.png" alt="">1</span></div>
+                </div>
+              </div>
+            </div>
+            <p class="caption">Randy, Kat, and Borby.</p>
+          </div>
+        </li>
+
+        <li class="beat beat--wide">
+          <div class="beat-copy">
+            <div class="beat-kicker"><span class="beat-num">03</span><span class="beat-tag">Then the bell</span></div>
+            <h3>Ring the bell.</h3>
+            <p>Your cards attack the lane ahead. Opposing cards trade damage. Open lanes tip the scale toward victory.</p>
+          </div>
+          <div class="lane-exhibit" aria-hidden="true">
+            <div class="lane-tag"><span>Enemy</span><span>Five lanes</span></div>
+            <div class="lane-row">
+              <span class="slot"></span>
+              <span class="slot slot--filled"><img src="assets/img/horse.png" alt=""></span>
+              <span class="slot slot--filled"><img src="assets/img/tyler.png" alt=""></span>
+              <span class="slot"></span>
+              <span class="slot"></span>
+            </div>
+            <div class="lane-mid"><span class="line"></span><img src="assets/img/scale.png" alt=""><span class="lane-scale">The scale</span><span class="line"></span></div>
+            <div class="lane-tag"><span>You</span><span>Ten points to win</span></div>
+            <div class="lane-row">
+              <span class="slot"></span>
+              <span class="slot slot--filled"><img src="assets/img/borby.png" alt=""></span>
+              <span class="slot"></span>
+              <span class="slot slot--filled"><img src="assets/img/kat.png" alt=""></span>
+              <span class="slot"></span>
+            </div>
+          </div>
+          <p class="caption lane-caption">Five lanes, one hit each. Empty lanes tip the scale.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section roster" id="bonemates" aria-labelledby="roster-title">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow"><svg class="star" aria-hidden="true"><use href="#star4"/></svg>The roster</p>
+        <h2 id="roster-title">Meet your next deck.</h2>
+        <p class="lede">Bonemates are your fighters. Combine their special abilities, called sigils, to build a stronger deck.</p>
+      </div>
+
+      <div class="hand">
+        <figure class="card-tile" style="--rot:-9deg;--dy:20px" title="Crowd Vigor: gains +1 Health per other card on the board.">
+          <div class="face">
+            <span class="cost"><img src="assets/img/blood.png" alt="">1</span>
+            <img class="cportrait" src="assets/img/borby.png" alt="">
+            <div class="cstats"><span><img src="assets/img/sword.png" alt="">1</span><span><img src="assets/img/heart.png" alt="">1</span></div>
+          </div>
+          <figcaption><span class="tile-name">Borby</span><span class="tile-sigil">Crowd Vigor</span></figcaption>
+        </figure>
+
+        <figure class="card-tile" style="--rot:-7.4deg;--dy:13px" title="Wander: drifts to an open lane each turn.">
+          <div class="face">
+            <span class="cost"><img src="assets/img/blood.png" alt="">1</span>
+            <img class="cportrait" src="assets/img/bort.png" alt="">
+            <div class="cstats"><span><img src="assets/img/sword.png" alt="">2</span><span><img src="assets/img/heart.png" alt="">2</span></div>
+          </div>
+          <figcaption><span class="tile-name">Bort</span><span class="tile-sigil">Wander</span></figcaption>
+        </figure>
+
+        <figure class="card-tile" style="--rot:-5.7deg;--dy:8px" title="Snowball: gains +1/+1 each time it attacks.">
+          <div class="face">
+            <span class="cost"><img src="assets/img/blood.png" alt="">2</span>
+            <img class="cportrait" src="assets/img/majd.png" alt="">
+            <div class="cstats"><span><img src="assets/img/sword.png" alt="">2</span><span><img src="assets/img/heart.png" alt="">2</span></div>
+          </div>
+          <figcaption><span class="tile-name">Majd</span><span class="tile-sigil">Snowball</span></figcaption>
+        </figure>
+
+        <figure class="card-tile" style="--rot:-4.1deg;--dy:5px" title="Renew: each turn, heals your most wounded card to full Health.">
+          <div class="face">
+            <span class="cost"><img src="assets/img/bone.png" alt="">4</span>
+            <img class="cportrait" src="assets/img/pais.png" alt="">
+            <div class="cstats"><span><img src="assets/img/sword.png" alt="">1</span><span><img src="assets/img/heart.png" alt="">2</span></div>
+          </div>
+          <figcaption><span class="tile-name">Pais</span><span class="tile-sigil">Renew</span></figcaption>
+        </figure>
+
+        <figure class="card-tile" style="--rot:-2.5deg;--dy:2px" title="Grudge: gains +1 power each time it blocks.">
+          <div class="face">
+            <span class="cost"><img src="assets/img/blood.png" alt="">3</span>
+            <img class="cportrait" src="assets/img/randy.png" alt="">
+            <div class="cstats"><span><img src="assets/img/sword.png" alt="">2</span><span><img src="assets/img/heart.png" alt="">5</span></div>
+          </div>
+          <figcaption><span class="tile-name">Randy</span><span class="tile-sigil">Grudge</span></figcaption>
+        </figure>
+
+        <figure class="card-tile" style="--rot:-0.8deg;--dy:0" title="Vigor: each turn, this card and your other cards gain +1 Health.">
+          <div class="face">
+            <span class="cost"><img src="assets/img/bone.png" alt="">6</span>
+            <img class="cportrait" src="assets/img/christian.png" alt="">
+            <div class="cstats"><span><img src="assets/img/sword.png" alt="">3</span><span><img src="assets/img/heart.png" alt="">3</span></div>
+          </div>
+          <figcaption><span class="tile-name">Christian</span><span class="tile-sigil">Vigor</span></figcaption>
+        </figure>
+
+        <figure class="card-tile" style="--rot:0.8deg;--dy:0" title="Abduct: a blocker is dragged onto your side instead of being struck.">
+          <div class="face">
+            <span class="cost"><img src="assets/img/bone.png" alt="">6</span>
+            <img class="cportrait" src="assets/img/cody.png" alt="">
+            <div class="cstats"><span><img src="assets/img/sword.png" alt="">1</span><span><img src="assets/img/heart.png" alt="">5</span></div>
+          </div>
+          <figcaption><span class="tile-name">Cody</span><span class="tile-sigil">Abduct</span></figcaption>
+        </figure>
+
+        <figure class="card-tile" style="--rot:2.5deg;--dy:2px" title="Whelp: adds one Pup to your hand each turn.">
+          <div class="face">
+            <span class="cost"><img src="assets/img/bone.png" alt="">4</span>
+            <img class="cportrait" src="assets/img/kat.png" alt="">
+            <div class="cstats"><span><img src="assets/img/sword.png" alt="">1</span><span><img src="assets/img/heart.png" alt="">2</span></div>
+          </div>
+          <figcaption><span class="tile-name">Kat</span><span class="tile-sigil">Whelp</span></figcaption>
+        </figure>
+
+        <figure class="card-tile" style="--rot:4.1deg;--dy:5px" title="Cavalry and Stampede: brings a Horse, and grows with every Horse on the board.">
+          <div class="face">
+            <span class="cost"><img src="assets/img/bone.png" alt="">4</span>
+            <img class="cportrait" src="assets/img/rebecca.png" alt="">
+            <div class="cstats"><span><img src="assets/img/sword.png" alt="">2</span><span><img src="assets/img/heart.png" alt="">2</span></div>
+          </div>
+          <figcaption><span class="tile-name">Rebecca</span><span class="tile-sigil">Cavalry</span></figcaption>
+        </figure>
+
+        <figure class="card-tile" style="--rot:5.7deg;--dy:8px" title="Heals back to full Health at the end of every turn.">
+          <div class="face">
+            <span class="cost"><img src="assets/img/blood.png" alt="">3</span>
+            <img class="cportrait" src="assets/img/tommy.png" alt="">
+            <div class="cstats"><span><img src="assets/img/sword.png" alt="">2</span><span><img src="assets/img/heart.png" alt="">6</span></div>
+          </div>
+          <figcaption><span class="tile-name">Tommy</span><span class="tile-sigil">Full Heal</span></figcaption>
+        </figure>
+
+        <figure class="card-tile" style="--rot:7.4deg;--dy:13px" title="Crowd Power: +1 power per other card on the board.">
+          <div class="face">
+            <span class="cost"><img src="assets/img/blood.png" alt="">1</span>
+            <img class="cportrait" src="assets/img/ridge.png" alt="">
+            <div class="cstats"><span><img src="assets/img/sword.png" alt="">1</span><span><img src="assets/img/heart.png" alt="">2</span></div>
+          </div>
+          <figcaption><span class="tile-name">Ridge</span><span class="tile-sigil">Crowd Power</span></figcaption>
+        </figure>
+
+        <figure class="card-tile" style="--rot:9deg;--dy:20px" title="Flighty: hides on the enemy's turn, so it can't block or be hit.">
+          <div class="face">
+            <span class="cost"><img src="assets/img/blood.png" alt="">1</span>
+            <img class="cportrait" src="assets/img/tyler.png" alt="">
+            <div class="cstats"><span><img src="assets/img/sword.png" alt="">2</span><span><img src="assets/img/heart.png" alt="">1</span></div>
+          </div>
+          <figcaption><span class="tile-name">Tyler</span><span class="tile-sigil">Flighty</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--stone" id="climb" aria-labelledby="climb-title">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow"><svg class="star" aria-hidden="true"><use href="#star4"/></svg>Your run</p>
+        <h2 id="climb-title">Build a deck. Survive the climb.</h2>
+        <p class="lede">Choose a route, upgrade your cards, and trade for supplies. Battle through three regions to reach the Host.</p>
+      </div>
+
+      <div class="climb-grid">
+        <figure class="map-figure">
+          <img src="assets/shots/map.webp" width="1280" height="800" loading="lazy" decoding="async" alt="Bonemates branching run map with battles, campfires, and upgrade events.">
+          <figcaption>Choose your path between battles and upgrades.</figcaption>
+        </figure>
+
+        <div class="climb-copy">
+          <ol class="regions">
+            <li><span class="idx">I</span><div><span class="region-name">The Woodlands</span><span class="region-desc">Firs, oaks, toadstools. The easy country.</span></div></li>
+            <li><span class="idx">II</span><div><span class="region-name">The Wetlands</span><span class="region-desc">Bare drowned trees, reeds, standing water.</span></div></li>
+            <li><span class="idx">III</span><div><span class="region-name">The Snow Line</span><span class="region-desc">Snow-capped firs, drifts, and cairns.</span></div></li>
+            <li><span class="idx">IV</span><div><span class="region-name">The Cabin</span><span class="region-desc">Dead pines at dusk. The Host.</span></div></li>
+          </ol>
+
+          <p class="climb-note">Keep your candles burning. Each loss costs a life.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="closing" aria-labelledby="closing-title">
+    <div class="wrap">
+      <img class="closing-mark" src="assets/img/candles.png" width="96" height="108" alt="">
+      <h2 id="closing-title">Your deck awaits.</h2>
+      <p>Play free in your browser. No download needed.</p>
+      <a class="btn btn--large" href="/play/">Play free <span class="arrow" aria-hidden="true">→</span></a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="brand" href="#top">
+          <img class="brand-mark" src="assets/img/candles.png" alt="" width="28" height="32">
+          <span class="brand-name">Bonemates</span>
+        </a>
+        <p>A candlelit roguelike deckbuilder. Free to play in your browser.</p>
+      </div>
+      <nav class="foot-nav" aria-label="Footer">
+        <a href="/play/">Play free</a>
+        <a href="#wager">Combat</a>
+        <a href="#turn">How to play</a>
+        <a href="#bonemates">Cards</a>
+        <a href="#climb">Your run</a>
+        <a href="https://github.com/majicmaj/bonemates-web" target="_blank" rel="noopener">Source</a>
+      </nav>
+      <div class="foot-credits">
+        <p>World art recomposed from the <a href="https://solarialicence.carrd.co/" target="_blank" rel="noopener">World of Solaria</a> pack by Jamie Brownhill. Portraits, frames, the scale, and the wordmark are original. Display type: New Rocker.</p>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>Bonemates, a homegrown game.</span>
+      <span>Game art shown for promotion under the World of Solaria licence.</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
